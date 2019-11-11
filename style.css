@@ -1,0 +1,492 @@
+@charset "UTF-8";
+.container {
+    margin: 0 auto;
+    line-height: 1.75;
+    width: 101%;
+    height: 100%;
+}
+
+/* たいとる */
+.letters {
+    font-family: 'kaushan script', cursive;
+    font-style: italic;
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 35px;
+    color: black;
+    font-weight: bolder;
+    margin-left: 10%;
+}
+
+h3 {
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+h4 {
+    font-size: 25px;
+    /* margin-left: 10%; */
+}
+
+p {
+    font-size: 25px;
+    color: black;
+    margin-left: 2%;
+}
+
+/* たいとる */
+.tittle {
+    margin: 0;
+    font-weight: 500;
+    font-size: 4.5em;
+    color: #402d2d;
+    margin-left: 20%;
+}
+.tittle .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    /* padding-right: 0.05em; */
+    padding-bottom: 0.15em;
+    line-height: 1em;
+    margin-top: 15%;
+}
+
+/* たいとるのせん */
+.tittle .line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    background-color: #402d2d;
+    transform-origin: 0.5 1;
+}
+
+/* ＆だけ */
+.tittle .ampersand {
+    font-family: Baskerville, "EB Garamond", serif;
+    font-style: italic;
+    font-weight: 400;
+}
+.tittle .letters {
+    display: inline-block;
+    opacity: 1;
+}
+
+
+/* 青の洞窟行けんかったがやけど残念(´；ω；`) */
+/* 仕方ないから課題でもするけ。。。だやい(´-ω-`) */
+
+.box1 {
+    background: rgb(0, 238, 255);
+    background: linear-gradient(166deg, rgba(0, 238, 255, 1) 30%, rgba(149, 246, 252, 1) 69%);
+    color: white;
+    height: 100%;
+    /* width: 50%; */
+    /* display: flex;
+    justify-content: end; */
+}
+
+nav {
+    height: auto;
+    text-align: left;
+    color: #402d2d;
+    /* margin-left: 3%; */
+    font-size: 20px;
+    /* border-radius: 10px; */
+}
+
+.sticky {
+    /* position: sticky; 
+    stickyは親要素までしかついてこんやで使い勝手悪めやんな(´-ω-`)*/
+    position: fixed;
+    top: 10%;
+    left: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+    cursor: pointer;
+    width: 100%;
+    background: rgb(165, 255, 228);
+    border-radius: 10px;
+    font-family: Century Gothic;
+    letter-spacing: 5px;
+}
+
+.div {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    margin-top: 2%;
+    transition-duration: 0.2s;
+}
+
+/* なぶたぶ斜め。奇数と偶数でわけよー٩( ᐛ )و */
+.p:hover {
+    background: rgba(255, 208, 238, 0.5);
+    color: black;
+}
+
+.div:nth-child(odd) {
+    transform: perspective(300px) rotateY(45deg);
+    box-shadow: -2px 2px 7px gray;
+}
+
+.div:nth-child(even) {
+    transform: perspective(300px) rotateY(-45deg);
+    box-shadow: 2px 2px 7px gray;
+}
+
+.div:hover {
+    transform: rotateY(0);
+    background: white;
+    color: black;
+    box-shadow: 0px 0px 0px;
+}
+
+
+.page {
+    height: 100%;
+    width: 100%;
+}
+
+.box1-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* margin-top: 10%; */
+    margin-left: 8%;
+}
+
+.left-top {
+    margin-top: 7%;
+    margin-left: 18%;
+    text-align: center;
+}
+
+.left-bottom {
+    margin-top: 8%;
+    font-size: 50px;
+}
+
+/* あぁぁぁぁぁーーーーねむいむり_(:3 」∠)_ */
+
+/* やわやわお昼寝の時間やちゃ（´-`）.｡oO  */
+
+/* 続けても崩れるだけやから大人しく寝まっし(_ _).｡o○ */
+
+.box2 {
+    background: rgb(149, 246, 252);
+    background: linear-gradient(175deg, rgba(149, 246, 252, 1) 30%, rgba(255, 208, 238, 1) 53%);
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.top2 {
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#left-top1 {
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 6%;
+}
+
+.left-bottom1 {
+    text-align: center;
+    margin-left: 10%;
+}
+
+/* 今日は本場のたこ焼きいぇーい٩( ᐛ )و */
+
+.bottom2 {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12%;
+}
+
+.bottom-left {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.bottom-left li {
+    border-right: 4px solid rgb(66, 61, 61);
+    border-top: 1px solid rgb(66, 59, 59);
+    border-radius: 5px;
+}
+
+.bottom-left li:first-child {
+    border-left: 1px solid rgb(66, 61, 61);
+}
+
+.bottom-left li a {
+    display: block;
+    padding: 5px 10px;
+    color: rgb(37, 35, 35);
+    text-decoration: none;
+}
+
+.bottom-left li a.active {
+    margin-bottom: -1px;
+}
+
+.bottom-content {
+    font-size: 20px;
+    z-index: -1;
+    width: 90%;
+    border:  5px solid rgba(253, 101, 245, 0.6);
+    /* width: 200px; */
+    margin: 30px 120px;
+    border-radius: 300px 15px 400px 20px/25px 230px 15px 255px;
+    padding: 10px;
+}
+
+li {
+    font-size: 25px;
+    margin: 1.5px;
+    position: relative;
+    color: #6eb0f9;
+    line-height: 1.75;
+    -webkit-box-reflect: below -10px -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.6));
+}
+
+/* 訳わからんくなってきたなァ(´-ω-`) */
+
+#left01 {
+    width: auto;
+    margin: 0 auto;
+    /* margin-right: 20%; */
+    text-align: center;
+}
+
+#left02 {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bottom-content>.active {
+    display: block;
+}
+
+/* marginどこで変えるかわからん */
+
+.bottom-content>div {
+    display: none;
+    padding: 15px;
+    height: auto;
+    /* line-height: 24px; */
+}
+
+.bottom-left {
+    border-radius: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.box3 {
+    background: rgb(255, 208, 238);
+    background: linear-gradient(186deg, rgba(255, 208, 238, 1) 35%, rgba(218, 182, 255, 1) 78%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.top3 {
+    margin-top: 8%;
+    text-align: center;
+    margin-left: 5%;
+    width: auto;
+}
+
+.bottom3 {
+    margin-top: 13%;
+    width: 100%;
+    text-align: center;
+}
+.top3 h2 {
+    margin-left: 0;
+    margin-top: 5%;
+}
+.bottom3 h2, p {
+    margin-left: 0;   
+}
+
+/* つかれた_(:3 」∠)_ */
+
+.button {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    appearance: none;
+    background-color: #ff0081;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.2s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+}
+
+.button:focus {
+    outline: 0;
+}
+/* 10-FEETにfocusって曲あったなー(・∀・) */
+
+
+.button:before, .button:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 2.5s;
+    background-repeat: no-repeat;
+}
+
+.button:before {
+    display: none;
+    top: -85%;
+    background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+
+.button:after {
+    display: none;
+    bottom: -85%;
+    background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+
+.button:active {
+    transform: scale(1);
+    background-color: #e60074;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+
+.button.animate:before {
+    display: block;
+    animation: topBubbles ease-in-out 1.5s forwards;
+}
+
+.button.animate:after {
+    display: block;
+    animation: bottomBubbles ease-in-out 1.5s forwards;
+}
+
+@keyframes topBubbles {
+    0% {
+        background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    }
+    50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+    100% {
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+@keyframes bottomBubbles {
+    0% {
+        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    }
+    50% {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+    100% {
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+/* なんでやろ🤔
+ボタンの水しぶきみたいやつうまく跳ねんやけど。どっか打ち間違えたかな...(´；ω；`) */
+
+.box4 {
+    background: rgb(0, 238, 255);
+    background: linear-gradient(4deg, rgba(0, 238, 255, 1) 25%, rgba(218, 182, 255, 1) 68%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* 結局お昼寝しなかったし(´-ω-`)お腹すいたし今日もぉ１３時間ぶっ通しやわ。つら_(:3 」∠)_ */
+
+.left-top4 {
+    margin-top: 15%;
+    margin-left: 8%;
+    text-align: center;
+}
+
+#last {
+    margin-left: 8%;
+}
+
+.left-bottom4 {
+    margin-top: 10%;
+    font-size: 48px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    margin: 2em 0;
+    padding: 2em 2em;
+    /*文字まわりの余白*/
+    border: 1px solid #c70000;
+    border-radius: 50px;
+    /*ボックスの角のまるみ*/
+}
+
+
+.left-bottom4:before, .left-bottom4:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.left-bottom4:before {
+    left: 0;
+    border: 1.3px solid #1d46fd;
+    transform: rotate(-0.7deg);
+    /*ボックスの角度*/
+}
+
+.left-bottom4:after {
+    left: 0;
+    border: 1.5px solid #007506;
+    transform: rotate(0.7deg);
+}
+
+/* ライブ行きたいなー。ロットン沖縄こやんかな？(´-ω-`) */

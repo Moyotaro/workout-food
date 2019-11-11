@@ -1,0 +1,322 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0 auto;
+    background-attachment: fixed;
+    /* background: #ddddff; */
+    background: radial-gradient(circle, rgba(208, 255, 229, 1) 34%, rgba(182, 255, 236, 0.9009978991596639) 76%);
+    /* background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%); */
+    /* background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
+    padding: 50px 0;
+    margin-top: 10%;
+    margin-bottom: 0;
+    font-family: YuGothic, "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    /* letter-spacing: 0.25em; */
+    line-height: 1.5;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 380px;
+    height: 180px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.carousel {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    /* position: absolute; */
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.item {
+    display: block;
+    /* position: absolute; */
+    position: fixed;
+    background: #000;
+    width: 380px;
+    height: 180px;
+    /* line-height: 200px; */
+    font-size: 25px;
+    text-align: center;
+    color: #FFF;
+    /* opacity: 0.95; */
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.accordion_inner {
+    width: 550px;
+    height: auto;
+    margin-top: 0;
+    margin-left: -100px;
+}
+
+.s_01 .accordion_one {
+    margin: 0 auto;
+}
+
+.s_01 .accordion_one .accordion_header {
+    color: #5f5359;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 20px 11%;
+    text-align: center;
+    position: relative;
+    z-index: +1;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.s_01 .accordion_one .accordion_header:hover {
+    opacity: .8;
+}
+
+.s_01 .accordion_one .accordion_header .i_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    margin-top: -20px;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+    transform-origin: center center;
+    transition-duration: 0.2s;
+    text-align: center;
+}
+
+.s_01 .accordion_one .accordion_header .i_box .one_i {
+    display: block;
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+    transform-origin: center center;
+    transition-duration: 0.2s;
+    position: relative;
+}
+
+.s_01 .accordion_one .accordion_header.open .i_box {
+    transform: rotate(-360deg);
+}
+
+.s_01 .accordion_one .accordion_header .i_box .one_i:before, .s_01 .accordion_one .accordion_header .i_box .one_i:after {
+    display: flex;
+    content: '';
+    background-color: #fff;
+    border-radius: 10px;
+    width: 18px;
+    height: 4px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    transform: rotate(0deg);
+    transform-origin: center center;
+}
+
+.s_01 .accordion_one .accordion_header .i_box .one_i:before {
+    width: 4px;
+    height: 18px;
+    top: 0;
+    left: 7px;
+}
+
+.s_01 .accordion_one .accordion_header.open .i_box .one_i:before {
+    content: none;
+}
+
+.s_01 .accordion_one .accordion_header.open .i_box .one_i:after {
+    transform: rotate(-45deg);
+}
+
+.s_01 .accordion_one .accordion_inner {
+    display: none;
+    position: relative;
+    padding: 10px;
+    text-align: left;
+    border-left: solid 3px #95ccff;
+    border-right: solid 3px #95ccff;
+    border-bottom: solid 3px #95ccff;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.s_01 .accordion_one .accordion_inner .box_one {
+    width: 100%;
+}
+
+p {
+    font-size: 16px;
+    width: auto;
+    height: auto;
+    color: #b39ba7;
+}
+
+/* 終わらんんんんんんん */
+
+.a {
+    transform: rotateY(0deg) translateZ(400px);
+    background: #dedeff;
+}
+
+.b {
+    transform: rotateY(60deg) translateZ(400px);
+    background: #ffdeef;
+}
+
+.c {
+    transform: rotateY(120deg) translateZ(400px);
+    background: #dedeff;
+}
+
+.d {
+    transform: rotateY(180deg) translateZ(400px);
+    background: #ffdeef;
+}
+
+.e {
+    transform: rotateY(240deg) translateZ(400px);
+    background: #dedeff;
+}
+
+.f {
+    transform: rotateY(300deg) translateZ(400px);
+    background: #ffdeef;
+}
+
+/* アクション入ってるのに他のアクション入れるの無理なんかな？_(:3 」∠)_ */
+.next, .prev {
+    color: #444;
+    position: fixed;
+    top: 230px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #CCC;
+    border-radius: 5px;
+    border-top: 1px solid #FFF;
+    box-shadow: 0 5px 0 #999;
+    transition: box-shadow 0.1s, top 0.1s;
+}
+
+.next:hover, .prev:hover {
+    color: #000;
+}
+
+.next:active, .prev:active {
+    top: 233px;
+    box-shadow: 0 1px 0 #999;
+}
+
+.next {
+    right: 100px;
+}
+
+.prev {
+    left: 100px;
+}
+
+/* ボタン再登場(・∀・)
+コード書くのめんどくさいけどかなりお気に入り( ^ω^ ) */
+.button {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+    margin-top: 330px;
+    margin-bottom: 60px;
+    appearance: none;
+    background-color: #ff3c9e;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    transition: transform ease-in 0.2s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+    margin-left: 90%;
+}
+
+.button:focus {
+    outline: 0;
+}
+
+.button:before, .button:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 2.5s;
+    background-repeat: no-repeat;
+}
+
+.button:before {
+    display: none;
+    top: -75%;
+    background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+
+.button:after {
+    display: none;
+    bottom: -75%;
+    background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+
+.button:active {
+    transform: scale(1);
+    background-color: #e60074;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+
+.button.animate:before {
+    display: block;
+    animation: topBubbles ease-in-out 1.5s forwards;
+}
+
+.button.animate:after {
+    display: block;
+    animation: bottomBubbles ease-in-out 1.5s forwards;
+}
+
+@keyframes topBubbles {
+    0% {
+        background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    }
+    50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+    100% {
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+@keyframes bottomBubbles {
+    0% {
+        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    }
+    50% {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+    100% {
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
