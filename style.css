@@ -223,7 +223,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 12%;
+    margin-top: 8%;
 }
 
 .bottom-left {
@@ -260,7 +260,7 @@ nav {
     width: 90%;
     border:  5px solid rgba(253, 101, 245, 0.6);
     /* width: 200px; */
-    margin: 30px 120px;
+    margin: 20px 120px;
     border-radius: 300px 15px 400px 20px/25px 230px 15px 255px;
     padding: 10px;
 }
@@ -299,7 +299,6 @@ li {
     display: none;
     padding: 15px;
     height: auto;
-    /* line-height: 24px; */
 }
 
 .bottom-left {
@@ -324,7 +323,7 @@ li {
 }
 
 .bottom3 {
-    margin-top: 13%;
+    margin-top: 10%;
     width: 100%;
     text-align: center;
 }
@@ -343,7 +342,7 @@ li {
     display: inline-block;
     font-size: 1em;
     padding: 1em 2em;
-    margin-top: 80px;
+    margin-top: 25px;
     margin-bottom: 60px;
     appearance: none;
     background-color: #ff0081;
